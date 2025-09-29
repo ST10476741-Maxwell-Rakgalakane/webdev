@@ -1,17 +1,34 @@
-/* CSS Reset for cross-browser consistency */
+/* =========================
+   CSS Reset for Consistency
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base styles */
+/* =========================
+   Color Variables
+========================= */
+:root {
+  --color-bg: #f4d9a8;
+  --color-text: #333;
+  --color-heading: #222;
+  --color-primary: #0077cc;
+  --color-primary-hover: #005fa3;
+  --color-card-bg: #fff;
+  --color-card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   Base Styles
+========================= */
 body {
-  font-family: 'Inter', sans-serif; /* matches your Google Fonts link */
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333; /* default text color */
-  background-color: #fdfdfd; /* light background */
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 a {
@@ -24,11 +41,14 @@ img {
   height: auto;
   display: block;
 }
-/* Typography */
+
+/* =========================
+   Typography
+========================= */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin-bottom: 0.5em;
-  color: #222;
+  color: var(--color-heading);
 }
 
 h1 {
@@ -46,40 +66,102 @@ p {
 }
 
 a:hover {
-  color: #0077cc; /* subtle hover color */
+  color: var(--color-primary);
 }
-/* Layout */
+
+/* =========================
+   Layout
+========================= */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* =========================
+   Navigation
+========================= */
 nav ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  padding: 1rem 0;
 }
-button, a {
-  background: #0077cc;
+
+/* =========================
+   Buttons & Links
+========================= */
+button, a.button {
+  background: var(--color-primary);
   color: #fff;
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-button:hover, a:hover {
-  background: #005fa3;
+button:hover, a.button:hover {
+  background: var(--color-primary-hover);
 }
-/* Tablet */
+
+/* =========================
+   Hero Section
+========================= */
+.hero-image {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   Services Section
+========================= */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.service-card {
+  background: var(--color-card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--color-card-shadow);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px var(--color-card-shadow);
+}
+
+.service-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+}
+
+/* =========================
+   Responsive Design
+========================= */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     text-align: center;
+    gap: 0.5rem;
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   body {
     font-size: 14px;
