@@ -60,3 +60,14 @@ nav ul {
   justify-content: space-around;
   list-style: none;
 }
+button, a {
+  background: #0077cc;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+button:hover, a:hover {
+  background: #005fa3;
+}
