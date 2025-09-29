@@ -107,6 +107,16 @@ For any enquiries regarding the website, contact:
 - Fixed missing alt attributes for images (Part 1 feedback).
 - Corrected incorrect heading levels for accessibility.
 - Added meta description for SEO (Part 1 feedback).
+### Screenshots
+
+**Desktop View**  
+![Desktop](images/desktop.png)
+
+**Tablet View**  
+![Tablet](images/tablet.png)
+
+**Mobile View**  
+![Mobile](images/mobile.png)
 
 ---
 
