@@ -48,3 +48,9 @@ p {
 a:hover {
   color: #0077cc; /* subtle hover color */
 }
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
