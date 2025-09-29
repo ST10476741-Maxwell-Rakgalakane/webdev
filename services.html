@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Character encoding -->
+  <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-charset -->
+  <meta charset="utf-8" />
+
+  <!-- Responsive design for mobile devices -->
+  <!-- Reference: https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title -->
+  <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title -->
+  <title>Services | Makhubo & Sons Plumbing</title>
+
+  <!-- Link to CSS stylesheet -->
+  <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <!-- Reference: https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header with logo and navigation -->
+  <header class="site-header">
+    <div class="container">
+      <!-- Company logo -->
+      <a class="logo" href="index.html">Makhubo & Sons Plumbing</a>
+
+      <!-- Primary navigation menu -->
+      <nav class="primary-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" class="container">
+    <h1>Our Services</h1>
+
+    <!-- Services grid -->
+    <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article -->
+    <div class="grid-3">
+      <article class="card">
+        <h2>Drain Unblocking</h2>
+        <p>High‑pressure jetting and CCTV inspections to find and fix the cause.</p>
+      </article>
+      <article class="card">
+        <h2>Geyser Repairs & Replacement</h2>
+        <p>Compliance certificates, thermostats, elements, and full replacements.</p>
+      </article>
+      <article class="card">
+        <h2>Leak Detection</h2>
+        <p>Acoustic and thermal imaging to pinpoint hidden leaks without damage.</p>
+      </article>
+      <article class="card">
+        <h2>Installations</h2>
+        <p>Kitchens, bathrooms, new builds, and renovations.</p>
+      </article>
+      <article class="card">
+        <h2>Emergency Call‑outs</h2>
+        <p>Priority response for burst pipes and severe blockages.</p>
+      </article>
+      <article class="card">
+        <h2>Maintenance Plans</h2>
+        <p>Preventative checks to reduce surprises and downtime.</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Makhubo & Sons Plumbing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript file -->
+  <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
